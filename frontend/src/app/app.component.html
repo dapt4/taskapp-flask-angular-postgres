@@ -1,0 +1,13 @@
+<p>
+  <mat-toolbar color="accent">
+    <span routerLink="/">TaskApp</span>
+    <span class="space"></span>
+    <button mat-button [matMenuTriggerFor]="menu">Menu</button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item routerLink="/">List</button>
+      <button mat-menu-item routerLink="/new">New</button>
+    </mat-menu>
+  </mat-toolbar>
+</p>
+
+<router-outlet></router-outlet>

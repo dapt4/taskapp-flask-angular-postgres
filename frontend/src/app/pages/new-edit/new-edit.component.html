@@ -1,0 +1,13 @@
+<mat-card class="card-container">
+  <mat-card-content>
+    <mat-form-field appearance="fill">
+      <mat-label>Title</mat-label>
+      <input matInput [(ngModel)]="data.title"/>
+    </mat-form-field><br>
+    <mat-form-field appearance="fill">
+      <mat-label>Textarea</mat-label>
+      <textarea matInput [(ngModel)]="data.description"></textarea>
+    </mat-form-field><br>
+    <button mat-raised-button color="primary" (click)="save()">Save</button>
+  </mat-card-content>
+</mat-card>
